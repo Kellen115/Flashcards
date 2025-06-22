@@ -11,7 +11,19 @@ function App() {
   const [darkMode, setDarkMode] = useState(() => {
   const saved = localStorage.getItem('darkMode');
   return saved === 'true';
-});
+  });
+
+//State variable for delete button
+  const deleteFlashcard = (indexToDelete) => {
+    setFlashcards(prev => prev.filter((_, index) => index !== indexToDelete));
+  };
+
+//State variable for edit button
+  const editFlashcard = (index, updatedCard) => {
+    setFlashcards(prev =>
+      prev.map((card, i) => (i === index ? updatedCard : card))
+    );
+  };
 
 //Checks if there is any saved dark mode in localStorage
   useEffect(() => {
@@ -60,7 +72,12 @@ function App() {
       <FlashcardForm onAdd={addFlashcard} />
       <div style={{ marginTop: '20px' }}>
         {flashcards.map((card, idx) => (
-          <Flashcard key={idx} flashcard={card} />
+          <Flashcard 
+            key={idx}
+            flashcard={card}
+            onDelete={() => deleteFlashcard(idx)}
+            onEdit={(updatedCard) => editFlashcard(idx, updatedCard)}
+            />
         ))}
       </div>
     </div>
