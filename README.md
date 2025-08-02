@@ -14,10 +14,10 @@ This is a simple flashcard app where you can add your own questions and answers 
 - HTML & CSS used for layout, styling, and making things look nice
 - No backend needed — it's all in the browser
 
-# Plans / Ideas
+# Plans
 Dark mode toggle (added!)
 Shuffle flashcards feature
-Editable flashcards
+Editable flashcards (added!)
 Option to export/import flashcards
 
 # How to use?
