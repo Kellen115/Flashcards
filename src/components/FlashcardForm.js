@@ -16,13 +16,13 @@ function FlashcardForm({ onAdd }) {
     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
       <input
         type="text"
-        placeholder="Please enter a question."
+        placeholder="Question:"
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Please enter the answer to that question."
+        placeholder="Answer:"
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
       />
