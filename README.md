@@ -16,8 +16,8 @@ This is a simple flashcard app where you can add your own questions and answers 
 
 # Plans
 Dark mode toggle (added!)
-Shuffle flashcards feature
 Editable flashcards (added!)
+Shuffle flashcards feature
 Option to export/import flashcards
 
 # How to use?
