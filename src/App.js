@@ -58,7 +58,7 @@ function App() {
     setFlashcards(prev => [card, ...prev]);
   };
 
-// This is what gets shown on the page
+// What is shown on page (jsx)
   return (
     <div style={{ position: 'relative', padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       <button 
